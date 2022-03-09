@@ -12,10 +12,7 @@ const authRoutes = require("./routes/auth");
 mongoose.connect(process.env.DATABASE)
   .then(() => {
   console.log("DB CONNECTED");
-  })
-  .catch(
-    console.log("DB CONNECTION ERROR!!")
-  );
+  });
 
 //Middlewares
 app.use(bodyParser.json());
